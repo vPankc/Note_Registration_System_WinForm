@@ -55,38 +55,20 @@ namespace Note_Registration_System
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sTDIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTDNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTDNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTDSURNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTDE1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTDE2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTDE3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aVERAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sITUATIONDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tblLessonBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.dbNoteRegDataSet2 = new Note_Registration_System.DbNoteRegDataSet2();
             this.tblLessonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbNoteRegDataSet = new Note_Registration_System.DbNoteRegDataSet();
             this.tblLessonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dbNoteRegDataSet1 = new Note_Registration_System.DbNoteRegDataSet1();
-            this.tbl_LessonTableAdapter = new Note_Registration_System.DbNoteRegDataSetTableAdapters.Tbl_LessonTableAdapter();
-            this.tbl_LessonTableAdapter1 = new Note_Registration_System.DbNoteRegDataSet1TableAdapters.Tbl_LessonTableAdapter();
             this.dbNoteRegDataSet3 = new Note_Registration_System.DbNoteRegDataSet3();
             this.tblLessonBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_LessonTableAdapter2 = new Note_Registration_System.DbNoteRegDataSet3TableAdapters.Tbl_LessonTableAdapter();
-            this.tbl_LessonTableAdapter3 = new Note_Registration_System.DbNoteRegDataSet2TableAdapters.Tbl_LessonTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource2)).BeginInit();
             this.SuspendLayout();
@@ -266,6 +248,7 @@ namespace Note_Registration_System
             this.lblPass.Size = new System.Drawing.Size(28, 18);
             this.lblPass.TabIndex = 11;
             this.lblPass.Text = "00";
+            this.lblPass.Click += new System.EventHandler(this.lblPass_Click);
             // 
             // lblAverage
             // 
@@ -275,6 +258,7 @@ namespace Note_Registration_System
             this.lblAverage.Size = new System.Drawing.Size(28, 18);
             this.lblAverage.TabIndex = 10;
             this.lblAverage.Text = "00";
+            this.lblAverage.Click += new System.EventHandler(this.lblAverage_Click);
             // 
             // lblRemaining
             // 
@@ -328,16 +312,6 @@ namespace Note_Registration_System
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sTDIDDataGridViewTextBoxColumn,
-            this.sTDNUMBERDataGridViewTextBoxColumn,
-            this.sTDNAMEDataGridViewTextBoxColumn,
-            this.sTDSURNAMEDataGridViewTextBoxColumn,
-            this.sTDE1DataGridViewTextBoxColumn,
-            this.sTDE2DataGridViewTextBoxColumn,
-            this.sTDE3DataGridViewTextBoxColumn,
-            this.aVERAGEDataGridViewTextBoxColumn,
-            this.sITUATIONDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.tblLessonBindingSource3;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 22);
@@ -346,98 +320,17 @@ namespace Note_Registration_System
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // sTDIDDataGridViewTextBoxColumn
-            // 
-            this.sTDIDDataGridViewTextBoxColumn.DataPropertyName = "STDID";
-            this.sTDIDDataGridViewTextBoxColumn.HeaderText = "STDID";
-            this.sTDIDDataGridViewTextBoxColumn.Name = "sTDIDDataGridViewTextBoxColumn";
-            this.sTDIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sTDNUMBERDataGridViewTextBoxColumn
-            // 
-            this.sTDNUMBERDataGridViewTextBoxColumn.DataPropertyName = "STDNUMBER";
-            this.sTDNUMBERDataGridViewTextBoxColumn.HeaderText = "STDNUMBER";
-            this.sTDNUMBERDataGridViewTextBoxColumn.Name = "sTDNUMBERDataGridViewTextBoxColumn";
-            // 
-            // sTDNAMEDataGridViewTextBoxColumn
-            // 
-            this.sTDNAMEDataGridViewTextBoxColumn.DataPropertyName = "STDNAME";
-            this.sTDNAMEDataGridViewTextBoxColumn.HeaderText = "STDNAME";
-            this.sTDNAMEDataGridViewTextBoxColumn.Name = "sTDNAMEDataGridViewTextBoxColumn";
-            // 
-            // sTDSURNAMEDataGridViewTextBoxColumn
-            // 
-            this.sTDSURNAMEDataGridViewTextBoxColumn.DataPropertyName = "STDSURNAME";
-            this.sTDSURNAMEDataGridViewTextBoxColumn.HeaderText = "STDSURNAME";
-            this.sTDSURNAMEDataGridViewTextBoxColumn.Name = "sTDSURNAMEDataGridViewTextBoxColumn";
-            // 
-            // sTDE1DataGridViewTextBoxColumn
-            // 
-            this.sTDE1DataGridViewTextBoxColumn.DataPropertyName = "STDE1";
-            this.sTDE1DataGridViewTextBoxColumn.HeaderText = "STDE1";
-            this.sTDE1DataGridViewTextBoxColumn.Name = "sTDE1DataGridViewTextBoxColumn";
-            // 
-            // sTDE2DataGridViewTextBoxColumn
-            // 
-            this.sTDE2DataGridViewTextBoxColumn.DataPropertyName = "STDE2";
-            this.sTDE2DataGridViewTextBoxColumn.HeaderText = "STDE2";
-            this.sTDE2DataGridViewTextBoxColumn.Name = "sTDE2DataGridViewTextBoxColumn";
-            // 
-            // sTDE3DataGridViewTextBoxColumn
-            // 
-            this.sTDE3DataGridViewTextBoxColumn.DataPropertyName = "STDE3";
-            this.sTDE3DataGridViewTextBoxColumn.HeaderText = "STDE3";
-            this.sTDE3DataGridViewTextBoxColumn.Name = "sTDE3DataGridViewTextBoxColumn";
-            // 
-            // aVERAGEDataGridViewTextBoxColumn
-            // 
-            this.aVERAGEDataGridViewTextBoxColumn.DataPropertyName = "AVERAGE";
-            this.aVERAGEDataGridViewTextBoxColumn.HeaderText = "AVERAGE";
-            this.aVERAGEDataGridViewTextBoxColumn.Name = "aVERAGEDataGridViewTextBoxColumn";
-            // 
-            // sITUATIONDataGridViewCheckBoxColumn
-            // 
-            this.sITUATIONDataGridViewCheckBoxColumn.DataPropertyName = "SITUATION";
-            this.sITUATIONDataGridViewCheckBoxColumn.HeaderText = "SITUATION";
-            this.sITUATIONDataGridViewCheckBoxColumn.Name = "sITUATIONDataGridViewCheckBoxColumn";
-            // 
             // tblLessonBindingSource3
             // 
             this.tblLessonBindingSource3.DataMember = "Tbl_Lesson";
-            this.tblLessonBindingSource3.DataSource = this.dbNoteRegDataSet2;
-            // 
-            // dbNoteRegDataSet2
-            // 
-            this.dbNoteRegDataSet2.DataSetName = "DbNoteRegDataSet2";
-            this.dbNoteRegDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblLessonBindingSource
             // 
             this.tblLessonBindingSource.DataMember = "Tbl_Lesson";
-            this.tblLessonBindingSource.DataSource = this.dbNoteRegDataSet;
-            // 
-            // dbNoteRegDataSet
-            // 
-            this.dbNoteRegDataSet.DataSetName = "DbNoteRegDataSet";
-            this.dbNoteRegDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblLessonBindingSource1
             // 
             this.tblLessonBindingSource1.DataMember = "Tbl_Lesson";
-            this.tblLessonBindingSource1.DataSource = this.dbNoteRegDataSet1;
-            // 
-            // dbNoteRegDataSet1
-            // 
-            this.dbNoteRegDataSet1.DataSetName = "DbNoteRegDataSet1";
-            this.dbNoteRegDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbl_LessonTableAdapter
-            // 
-            this.tbl_LessonTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbl_LessonTableAdapter1
-            // 
-            this.tbl_LessonTableAdapter1.ClearBeforeFill = true;
             // 
             // dbNoteRegDataSet3
             // 
@@ -452,10 +345,6 @@ namespace Note_Registration_System
             // tbl_LessonTableAdapter2
             // 
             this.tbl_LessonTableAdapter2.ClearBeforeFill = true;
-            // 
-            // tbl_LessonTableAdapter3
-            // 
-            this.tbl_LessonTableAdapter3.ClearBeforeFill = true;
             // 
             // FrmTeacherDetail
             // 
@@ -481,11 +370,8 @@ namespace Note_Registration_System
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbNoteRegDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLessonBindingSource2)).EndInit();
             this.ResumeLayout(false);
@@ -518,19 +404,19 @@ namespace Note_Registration_System
         private System.Windows.Forms.Label lblAverage;
         private System.Windows.Forms.Label lblRemaining;
         private System.Windows.Forms.GroupBox groupBox4;
-        private DbNoteRegDataSet dbNoteRegDataSet;
+        //   private DbNoteRegDataSet dbNoteRegDataSet;
         private System.Windows.Forms.BindingSource tblLessonBindingSource;
-        private DbNoteRegDataSetTableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter;
-        private DbNoteRegDataSet1 dbNoteRegDataSet1;
+        //  private DbNoteRegDataSetTableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter;
+        //  private DbNoteRegDataSet1 dbNoteRegDataSet1;
         private System.Windows.Forms.BindingSource tblLessonBindingSource1;
-        private DbNoteRegDataSet1TableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter1;
+        //    private DbNoteRegDataSet1TableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter1;
         private DbNoteRegDataSet3 dbNoteRegDataSet3;
         private System.Windows.Forms.BindingSource tblLessonBindingSource2;
         private DbNoteRegDataSet3TableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DbNoteRegDataSet2 dbNoteRegDataSet2;
+        //  private DbNoteRegDataSet2 dbNoteRegDataSet2;
         private System.Windows.Forms.BindingSource tblLessonBindingSource3;
-        private DbNoteRegDataSet2TableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter3;
+        //    private DbNoteRegDataSet2TableAdapters.Tbl_LessonTableAdapter tbl_LessonTableAdapter3;
         private System.Windows.Forms.DataGridViewTextBoxColumn sTDIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sTDNUMBERDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sTDNAMEDataGridViewTextBoxColumn;

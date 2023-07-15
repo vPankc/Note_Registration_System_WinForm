@@ -108,6 +108,10 @@ namespace Note_Registration_System
             e3 = Convert.ToDouble(txtE1.Text);
             avg = (e1 + e2 + e3) / 3;
             lblAverage.Text = avg.ToString();
+            lblPass.Text = dbNoteRegDataSet3.Tbl_Lesson.Count(x => x.SITUATION == true).ToString();
+            lblRemaining.Text = dbNoteRegDataSet3.Tbl_Lesson.Count(x => x.SITUATION == false).ToString();
+
+
 
             if (avg >= 50)
             {
@@ -130,6 +134,16 @@ namespace Note_Registration_System
             _connection.Close();
             MessageBox.Show("Student grades updated!");
             this.tbl_LessonTableAdapter.Fill(this.dbNoteRegDataSet.Tbl_Lesson);
+
+        }
+
+        private void lblPass_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAverage_Click(object sender, EventArgs e)
+        {
 
         }
     }

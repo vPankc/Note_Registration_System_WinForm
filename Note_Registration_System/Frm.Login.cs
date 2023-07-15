@@ -47,5 +47,10 @@ namespace Note_Registration_System
                 fr.Show();
             }
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+        }
     }
 }

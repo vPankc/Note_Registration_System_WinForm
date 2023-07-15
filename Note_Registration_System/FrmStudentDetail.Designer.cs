@@ -48,20 +48,22 @@ namespace Note_Registration_System
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(22, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 18);
+            this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name Surname:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(22, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 18);
+            this.label2.Size = new System.Drawing.Size(110, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Number:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -69,20 +71,22 @@ namespace Note_Registration_System
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(22, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 18);
+            this.label3.Size = new System.Drawing.Size(96, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Exam 1:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(22, 179);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 18);
+            this.label4.Size = new System.Drawing.Size(99, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Exam 3:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -90,10 +94,11 @@ namespace Note_Registration_System
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(22, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 18);
+            this.label5.Size = new System.Drawing.Size(99, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Exam 2:";
             // 
@@ -101,10 +106,11 @@ namespace Note_Registration_System
             // 
             this.LblExam1.AccessibleName = "";
             this.LblExam1.AutoSize = true;
-            this.LblExam1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblExam1.Location = new System.Drawing.Point(94, 110);
+            this.LblExam1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblExam1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblExam1.Location = new System.Drawing.Point(124, 111);
             this.LblExam1.Name = "LblExam1";
-            this.LblExam1.Size = new System.Drawing.Size(28, 18);
+            this.LblExam1.Size = new System.Drawing.Size(34, 23);
             this.LblExam1.TabIndex = 5;
             this.LblExam1.Text = "00";
             this.LblExam1.Click += new System.EventHandler(this.label6_Click);
@@ -113,10 +119,11 @@ namespace Note_Registration_System
             // 
             this.LblExam3.AccessibleName = "";
             this.LblExam3.AutoSize = true;
-            this.LblExam3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblExam3.Location = new System.Drawing.Point(95, 179);
+            this.LblExam3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblExam3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblExam3.Location = new System.Drawing.Point(124, 181);
             this.LblExam3.Name = "LblExam3";
-            this.LblExam3.Size = new System.Drawing.Size(28, 18);
+            this.LblExam3.Size = new System.Drawing.Size(34, 23);
             this.LblExam3.TabIndex = 6;
             this.LblExam3.Text = "00";
             // 
@@ -124,10 +131,11 @@ namespace Note_Registration_System
             // 
             this.LblExam2.AccessibleName = "";
             this.LblExam2.AutoSize = true;
-            this.LblExam2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblExam2.Location = new System.Drawing.Point(95, 143);
+            this.LblExam2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblExam2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblExam2.Location = new System.Drawing.Point(124, 145);
             this.LblExam2.Name = "LblExam2";
-            this.LblExam2.Size = new System.Drawing.Size(28, 18);
+            this.LblExam2.Size = new System.Drawing.Size(34, 23);
             this.LblExam2.TabIndex = 7;
             this.LblExam2.Text = "00";
             // 
@@ -135,43 +143,48 @@ namespace Note_Registration_System
             // 
             this.LblNameSurname.AccessibleName = "";
             this.LblNameSurname.AutoSize = true;
-            this.LblNameSurname.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNameSurname.Location = new System.Drawing.Point(169, 38);
+            this.LblNameSurname.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameSurname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblNameSurname.Location = new System.Drawing.Point(217, 40);
             this.LblNameSurname.Name = "LblNameSurname";
-            this.LblNameSurname.Size = new System.Drawing.Size(52, 18);
+            this.LblNameSurname.Size = new System.Drawing.Size(61, 23);
             this.LblNameSurname.TabIndex = 8;
             this.LblNameSurname.Text = "NULL";
             this.LblNameSurname.Click += new System.EventHandler(this.label9_Click);
             // 
             // LblNumber
             // 
-            this.LblNumber.AccessibleName = "";
+            this.LblNumber.AccessibleName = "LblNumber";
             this.LblNumber.AutoSize = true;
-            this.LblNumber.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNumber.Location = new System.Drawing.Point(95, 67);
+            this.LblNumber.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblNumber.Location = new System.Drawing.Point(136, 72);
             this.LblNumber.Name = "LblNumber";
-            this.LblNumber.Size = new System.Drawing.Size(48, 18);
+            this.LblNumber.Size = new System.Drawing.Size(58, 23);
             this.LblNumber.TabIndex = 9;
             this.LblNumber.Text = "0000";
+            this.LblNumber.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.LblNumber.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Location = new System.Drawing.Point(22, 215);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 18);
+            this.label11.Size = new System.Drawing.Size(108, 25);
             this.label11.TabIndex = 10;
             this.label11.Text = "Average:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label12.Location = new System.Drawing.Point(22, 249);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 18);
+            this.label12.Size = new System.Drawing.Size(119, 25);
             this.label12.TabIndex = 11;
             this.label12.Text = "Situation:";
             // 
@@ -179,21 +192,24 @@ namespace Note_Registration_System
             // 
             this.LblAverage.AccessibleName = "";
             this.LblAverage.AutoSize = true;
-            this.LblAverage.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAverage.Location = new System.Drawing.Point(94, 215);
+            this.LblAverage.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAverage.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblAverage.Location = new System.Drawing.Point(136, 216);
             this.LblAverage.Name = "LblAverage";
-            this.LblAverage.Size = new System.Drawing.Size(28, 18);
+            this.LblAverage.Size = new System.Drawing.Size(34, 23);
             this.LblAverage.TabIndex = 12;
             this.LblAverage.Text = "00";
+            this.LblAverage.Click += new System.EventHandler(this.LblAverage_Click);
             // 
             // LblSituation
             // 
             this.LblSituation.AccessibleName = "";
             this.LblSituation.AutoSize = true;
-            this.LblSituation.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSituation.Location = new System.Drawing.Point(111, 249);
+            this.LblSituation.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSituation.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LblSituation.Location = new System.Drawing.Point(147, 251);
             this.LblSituation.Name = "LblSituation";
-            this.LblSituation.Size = new System.Drawing.Size(52, 18);
+            this.LblSituation.Size = new System.Drawing.Size(61, 23);
             this.LblSituation.TabIndex = 13;
             this.LblSituation.Text = "NULL";
             // 
@@ -201,7 +217,7 @@ namespace Note_Registration_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(551, 304);
             this.Controls.Add(this.LblSituation);
             this.Controls.Add(this.LblAverage);
@@ -218,7 +234,7 @@ namespace Note_Registration_System
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmStudentDetail";
             this.Text = "Student Note Registration System";
             this.Load += new System.EventHandler(this.FrmStudentDetail_Load);

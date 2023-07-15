@@ -46,21 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DbNoteRegDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbNoteRegDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DbNoteRegDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbNoteRegDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DbNoteRegDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbNoteRegDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DbNoteRegDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -103,40 +88,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DbNoteRegDataSet.xsc">
-      <DependentUpon>DbNoteRegDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DbNoteRegDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbNoteRegDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbNoteRegDataSet.xss">
-      <DependentUpon>DbNoteRegDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DbNoteRegDataSet1.xsc">
-      <DependentUpon>DbNoteRegDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DbNoteRegDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbNoteRegDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbNoteRegDataSet1.xss">
-      <DependentUpon>DbNoteRegDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DbNoteRegDataSet2.xsc">
-      <DependentUpon>DbNoteRegDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="DbNoteRegDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbNoteRegDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DbNoteRegDataSet2.xss">
-      <DependentUpon>DbNoteRegDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="DbNoteRegDataSet3.xsc">
       <DependentUpon>DbNoteRegDataSet3.xsd</DependentUpon>
     </None>
@@ -160,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatiht.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatih Terim-Gangstas Paradise.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
